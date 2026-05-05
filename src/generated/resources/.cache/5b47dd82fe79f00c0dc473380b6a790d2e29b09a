@@ -1,0 +1,7 @@
+// 1.21.1	2026-05-05T14:17:28.4653504	Block States: silicon_mod
+4aa400e23d150fd41ad1a5f5a2562d0d7e3674ab assets/silicon_mod/blockstates/plasma_furnace.json
+289dc1dee38b3b819588561014c76903efbda6ee assets/silicon_mod/blockstates/quartz_glass.json
+90861e651cc57cb32948f9685be30611073dc0e6 assets/silicon_mod/models/block/plasm_furnace.json
+12e5d2b67300c49310f93c1e48aa05fbe0ea379b assets/silicon_mod/models/block/quartz_glass.json
+a6ead6970986e79d8e7c18ee2e9e7221e43cef67 assets/silicon_mod/models/item/plasma_furnace.json
+2622bc91099dd146752c7ca4f7a5482831dcaf48 assets/silicon_mod/models/item/quartz_glass.json

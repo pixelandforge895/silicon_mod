@@ -1,0 +1,8 @@
+{
+  "block.silicon_mod.plasma_furnace": "プラズマ溶融炉",
+  "block.silicon_mod.quartz_glass": "石英ガラス",
+  "block.silicon_mod.silicon_dioxide_block": "酸化ケイ素",
+  "creatives.silicon_tab": "入門",
+  "death.attack.silicon_dioxide": "%sは二酸化ケイ素に溶かされた",
+  "item.silicon_mod.silicon_dioxide_bucket": "酸化ケイ素入りバケツ"
+}

@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "silicon_mod:block/plasm_furnace/top",
+    "east": "silicon_mod:block/plasm_furnace/flont",
+    "north": "silicon_mod:block/plasm_furnace/flont",
+    "south": "silicon_mod:block/plasm_furnace/flont",
+    "up": "silicon_mod:block/plasm_furnace/top",
+    "west": "silicon_mod:block/plasm_furnace/flont"
+  }
+}

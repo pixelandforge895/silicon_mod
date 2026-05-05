@@ -1,0 +1,8 @@
+{
+  "block.silicon_mod.plasma_furnace": "plasma_furnace",
+  "block.silicon_mod.quartz_glass": "quartz_glass",
+  "block.silicon_mod.silicon_dioxide_block": "silicon dioxide",
+  "creatives.silicon_tab": "Introduction",
+  "death.attack.silicon_dioxide": "%s was dissolved in silicon dioxide",
+  "item.silicon_mod.silicon_dioxide_bucket": "silicon dioxide bucket"
+}

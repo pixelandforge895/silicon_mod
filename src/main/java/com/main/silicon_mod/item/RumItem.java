@@ -1,0 +1,48 @@
+package com.main.silicon_mod.item;
+
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemUtils;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.level.Level;
+
+public class RumItem extends Item {
+    public RumItem(Properties pProperties) {
+        super(pProperties);
+    }
+    //アイテムの使用
+    @Override
+    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pUsedHand) {
+        return ItemUtils.startUsingInstantly(pLevel,pPlayer,pUsedHand);
+    }
+    //使用後の処理
+
+    @Override
+    public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
+        //エフェクトの付与
+        pLivingEntity.addEffect(new MobEffectInstance(MobEffects.CONFUSION,100));
+        //アイテムの消費
+        if (pLivingEntity instanceof Player player && !player.isCreative()){
+            pStack.shrink(1);//使用者がプレイヤーかつ非クリエでアイテム一消費
+        }
+        return pStack;
+    }
+    //アイテム使用時間
+
+    @Override
+    public int getUseDuration(ItemStack pStack, LivingEntity pEntity) {
+        return 32;//牛乳と同じくらい
+    }
+    //アニメーション追加
+
+    @Override
+    public UseAnim getUseAnimation(ItemStack pStack) {
+        return UseAnim.DRINK;
+    }
+}
