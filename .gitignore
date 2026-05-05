@@ -1,0 +1,6 @@
+/build/
+/run/
+/run_data/
+/.gradle/
+/.idea/
+*.iml
